@@ -32,7 +32,7 @@ header {
     justify-content: center;
     flex-basis: 35%;
     height: 5em;    
-    
+
 }
 
 #nav-bar {        
@@ -77,16 +77,13 @@ h2, h3 {
 #video-container {
     display: flex;
     flex-direction: column;
-    margin: 1em auto;   
-    
-    
+    margin: 1em auto;  
 }
-
 
 #video-container h2 {    
     margin-bottom: 1em;
     margin: 0 auto 1em;
-    
+
 }
 
 #video {
@@ -95,23 +92,28 @@ h2, h3 {
     margin: 0 auto;
 }
 
+
 #products {
     display: flex;
     justify-content: space-between;
-    margin: 1em 0;     
+    margin: 1em 0;       
 }
 
 .one-product {
+    display: flex;
+    flex-direction: column;
     border: solid 1px #777777;
     border-radius: 4px;
-    flex-basis: 32%;
-
+    flex-basis: 32%; 
+    
 }
 
-.one-product > img {
-    display: block;
+.one-product > img {    
     margin: 1em auto;  
+}
 
+ul {
+    margin-top: 1em;
 }
 
 
@@ -152,4 +154,18 @@ footer {
 }
 
 
+@media (max-width: 1049px) {
+    #products {
+        display: flex;
+        flex-direction: column;        
+        margin: 1em 0;     
+    }
 
+    .one-product {
+        display: flex;  
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid 1px #777777;
+        border-radius: 4px;   
+    }
+}
