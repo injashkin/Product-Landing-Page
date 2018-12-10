@@ -162,10 +162,48 @@ footer {
     }
 
     .one-product {
-        display: flex;  
-        flex-direction: row;
-        justify-content: space-between;
+        display: flex;
+        flex-flow: row nowrap;        
+        align-content: center;
         border: solid 1px #777777;
-        border-radius: 4px;   
+        border-radius: 4px; 
+        
+    }
+    
+    .one-product img {
+        min-width: 278px;
+        max-height: 278px;
     }
 }
+
+
+@media (max-width: 639px) {
+    .one-product {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 1em;
+    }
+}
+
+
+@media (max-width: 440px) {
+    header {
+    flex-direction: column;    
+    height: 8em;
+      
+}
+
+#header-img {
+    flex-basis: 70%;    
+}
+
+#nav-bar {  
+    flex-basis: 30%;
+}
+
+#h1 {
+    margin: 9em auto 1em auto;    
+}
+
+}
+
